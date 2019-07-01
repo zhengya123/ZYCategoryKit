@@ -1,0 +1,6 @@
+framework module Pods_ZYCategoryKit_Tests {
+  umbrella header "Pods-ZYCategoryKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
