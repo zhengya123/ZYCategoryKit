@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ZYCategoryKit/Classes/**/*"
+  "source_files": "ZYCategoryKit/Classes/**/*",
+  "dependencies": {
+    "ZYImageModule": [
+
+    ]
+  }
 }

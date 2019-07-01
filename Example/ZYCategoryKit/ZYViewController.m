@@ -7,7 +7,7 @@
 //
 
 #import "ZYViewController.h"
-
+#import "UIImage+ZYBundle.h"
 @interface ZYViewController ()
 
 @end
@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIImageView * imgV = [UIImageView new];
+    imgV.frame = CGRectMake(10, 100, 100, 100);
+    imgV.image = [UIImage ZYImageWithName:@"upVersionHeaderImage" TargetClass:[self class]];
+    [self.view addSubview:imgV];
 }
 
 - (void)didReceiveMemoryWarning
