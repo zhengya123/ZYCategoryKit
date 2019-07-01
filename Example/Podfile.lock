@@ -1,16 +1,23 @@
 PODS:
-  - ZYCategoryKit (0.1.1)
+  - ZYCategoryKit (0.1.2)
+  - ZYImageModule (0.1.2)
 
 DEPENDENCIES:
   - ZYCategoryKit (from `../`)
+  - ZYImageModule
+
+SPEC REPOS:
+  https://github.com/zhengya123/ZYModule.git:
+    - ZYImageModule
 
 EXTERNAL SOURCES:
   ZYCategoryKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZYCategoryKit: f60600cb3dc8f3425eeb838366995f4ccf86614d
+  ZYCategoryKit: 6fb4bc77f7e91bc883f6a747a3305cec9ebf70c3
+  ZYImageModule: 1b6ecc6b417a661d9cfc49b57d3253e080dbc209
 
-PODFILE CHECKSUM: 98fafad96bf941927573f33580dc67d9f8e1b7d5
+PODFILE CHECKSUM: 793acdcec2e2d66c85fff6f96818bb167403bc6b
 
 COCOAPODS: 1.7.2

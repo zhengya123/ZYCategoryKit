@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		03D4E6FDE0519335A3AF7E25 /* Pods-ZYCategoryKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCategoryKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYCategoryKit_Example/Pods-ZYCategoryKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3E8DC22E3C8D2736F2CC4E09 /* ZYCategoryKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZYCategoryKit.podspec; path = ../ZYCategoryKit.podspec; sourceTree = "<group>"; };
+		3E8DC22E3C8D2736F2CC4E09 /* ZYCategoryKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYCategoryKit.podspec; path = ../ZYCategoryKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* ZYCategoryKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYCategoryKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,11 +58,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		703EB3F59BBE07774C41D2DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		703EB3F59BBE07774C41D2DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89C4EB9716791250ACB436F0 /* libPods-ZYCategoryKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYCategoryKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9745AE49F0344B0EC824114A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9745AE49F0344B0EC824114A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A6165CAD4AB38F6BBF0240C8 /* Pods-ZYCategoryKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCategoryKit_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYCategoryKit_Example/Pods-ZYCategoryKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B590D50F471C0A0BC95D5632 /* Pods-ZYCategoryKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCategoryKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYCategoryKit_Tests/Pods-ZYCategoryKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B5E89661B740511463583C71 /* libPods-ZYCategoryKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYCategoryKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				D71A383C4A4B8367C899D503 /* Pods-ZYCategoryKit_Tests.debug.xcconfig */,
 				B590D50F471C0A0BC95D5632 /* Pods-ZYCategoryKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				A8669392B2D1D249E71E8321 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +314,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8669392B2D1D249E71E8321 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZYCategoryKit_Example/Pods-ZYCategoryKit_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ZYImageModule/ZYImageModule.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZYImageModule.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYCategoryKit_Example/Pods-ZYCategoryKit_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E9F1F5156D8EE21F48BE43FB /* [CP] Check Pods Manifest.lock */ = {
